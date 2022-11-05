@@ -1,51 +1,42 @@
-window.alert("Well Come To Project");
-var a1 = "abc";
-var b2 = "xyz";
- console.log (a1); 
- console.log (b2);
+alert ("hi");
+var math  = +prompt ('enter your math number');
+var english = +prompt ('enter your english number');
+var urdu = +prompt ('enter your urdu number');
+var science = +prompt ('enter your science number');
+var pakst = +prompt ('enter your pakst number');
 
-
- var e = 20;
- var f = 10;
- console.log(e - f);
-
- var c = 20;
- var d = 10;
- console.log(c * d);
-
-
- var g = 20;
- var h = 10;
- console.log(g / h);
- 
- var ii = 20;
- var jj = 10;
- console.log(i, j);
+var totalnum = (math+english+urdu+science+pakst);
+var percantage = ((totalnum/500)*100);
 
 
 
- var i = 20;
- var j = 10;
- console.log(i + j);
+if(percantage >90){
+    console.log("A grade");
 
- var k = 100;
- var l =k++;
- console.log(k)
- 
- 
+} else if(percantage >80){
+    console.log("B grade");
 
- var o = 100;
- var p =++o;
- console.log(o)
+} else if(percantage >70){
+    console.log("C grade");
 
- var q = 100;
- var r =--q;
- console.log(q)
+} else if(percantage >60){
+    console.log("D grade");
 
- var m = 100;
- var n =m--;
- console.log(m)
+}else{
+    console.log("you are failed");
+}
 
- var s =100;
- var t =10;
- console.log(s*t+s-t);
+var age = +prompt("please enter your age");
+var studentcard = prompt("have you student card?");
+ if(studentcard == ("yes")){
+    var studentcard = true;
+ }
+ else{var studentcard = false;}
+
+
+if(age == 18 || studentcard     == true){
+    console.log("allowed");
+}
+else{
+    console.log("not allowed")
+}
